@@ -1,1 +1,3 @@
-CSS Folder that contains all the style pages.
+CSS Folder 
+Andy Kukuc
+Contains Necessary Files
