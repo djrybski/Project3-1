@@ -9,11 +9,11 @@ var marker;
 var current;
 
 //top radioactive locations on Earth.
-var 5_mayak_siberia={lat: 55.695092, lng: 60.802625};
-var 4_semi_kazakhstan={lat: 50.423346, lng: 80.250811};
-var 3_malisuu_kyrgyzstan={lat: 41.248221, lng: 72.455402};
-var 2_chernobyl_ukraine={lat: 51.276302, lng: 30.221899};
-var 1_fukushima_japan={lat: 37.421336, lng: 141.028078};
+var mayak_siberia={lat: 55.695092, lng: 60.802625};
+var semi_kazakhstan={lat: 50.423346, lng: 80.250811};
+var malisuu_kyrgyzstan={lat: 41.248221, lng: 72.455402};
+var chernobyl_ukraine={lat: 51.276302, lng: 30.221899};
+var fukushima_japan={lat: 37.421336, lng: 141.028078};
 
 var locations=["Mayak","Semipalatinsk","Mailuu-Suu","Chernobyl","Fukushima"];
 
