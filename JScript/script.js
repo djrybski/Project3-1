@@ -14,45 +14,47 @@ var semi_kazakhstan={lat: 50.423346, lng: 80.250811};
 var malisuu_kyrgyzstan={lat: 41.248221, lng: 72.455402};
 var chernobyl_ukraine={lat: 51.276302, lng: 30.221899};
 var fukushima_japan={lat: 37.421336, lng: 141.028078};
+var secret_alien_base={lat: -30.510678, lng: 115.382231};
 
-var locations=["Mayak","Semipalatinsk","Mailuu-Suu","Chernobyl","Fukushima"];
+var locations=["Mayak","Semipalatinsk","Mailuu-Suu","Chernobyl","Fukushima","Secret Alien Base"];
 
 function initMap() {
 	current={lat: 55.695092, lng: 60.802625};
 	map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 10,
-		center: current
-	});
+		zoom:15,
+	center: mayak_siberia,mapTypeId:'satellite'});
 	marker = new google.maps.Marker({
-		position: current,
-		map: map
-});
+		position:mayak_siberia,
+		animation:google.maps.Animation.BOUNCE,
+	map: map });
 }
 
-function goto(location, title) {
+function travel(location, title) {
 	map.panTo(location);
 	map.setZoom(12);
 	marker = new google.maps.Marker({
 		position: location,
-		map:map
-});
-
-if(title==locations[0]){
-	document.getElementById("demo").innerHTML = "Mayak, Siberia contains a Chemical Plant where a bunch of toxic and radioactive waste has spilled out to the enviroment.";
-}
-else if (title==locations[1]) {
-	document.getElementById("demo").innerHTML = "Semipalatinsk, Kazakhstan formerlly a Soviet Nuclear Weapon Testing Location. The Soviets dropped a bunch of test nuclear bombs here and the area will be readicative for millenia.";
-}
-else if (title==locations[2]) {
-	document.getElementById("demo").innerHTML = "Mailuu-Suu, Kryrgyzstan used to be a Uranium mining spot. All Uranium that we use came form this lcoation but due to the pollution from mining the area is heavily irradiated.";
-}
-else if(title==locations[3]) {
-	document.getElementById("demo").innerHTML = "Chrenobyl, Ukraine a very famous spot that we all know about. In 1989 the nuclear power plant had a meltdwon and spewed several meric tons of radiaoactive waste to the surrounding towns and villages.";
-}
-else if(title==locations[4]) {
-	document.getElementById("demo").innerHTML = "Fukushima Power Plant in Japan. It was struck by a huge Tsunami in 2011 and the reactor cores went into total meltdown. The area is one of the most heaviest irradiated spots on Earth and makes it to the top of the list.";
-}
-else {
-	documnet.getElementById("demo").innerHTML = null;
-}
+		map: map
+	});
+	if(radioactive_spot==locations[0]){
+		document.getElementById("description").innerHTML="Mayak Siberia is a very heavily polluted and radioactive powerplant. A lot of radioactive wase has spilled out to the surrounding areas thus contamininating the forrests and wildlife for many thousands of years."
+	}
+	else if(radioactive_spot==locations[1]){
+		document.getElementById("description").innerHTML="Semipatalnsk used to be a Soviet Nuclear Testing Ground. Many nuclear bombs were detonated here and the land is highly radioactive for thousands of years."
+	}
+	else if(radioactive_spot==locations[2]){
+		document.getElementById("description").innerHTML="Malisuu Kyrgyzstan used to be a Uranium Mining Plant. All the Uranium we use came out of Malisuu. Unfortuantley, due to the pollution caused by the mine the area is a hit bed for radiactivity and is lethal wehn approached too close."
+	}
+	else if(radioactive_spot==locations[3]) {
+		document.getElementById("description").innerHTML="Chernobyl Ukraine had a reactor core meltdown back in the 1980's, The Reacter Core blew up spreading serveral metric tons of Radioactive Material into the atmosphere."
+	}
+	else if(radioactive_spot==locations[4]){
+		document.getElementById("description").innerHTML="Fukusima Daici Power Plant in Japan experienced a Tsunami in 2011. Due to poor effective planning for this natural disaster it is the most radiaoactive location on earth. The reactor had several meltdowns and a lot of radiation has spewed into the Pacific Ocean."
+	}
+	else if(radioactive_spot==locations[5]) {
+		document.getElementById("description").innerHTML="It was a Hoax! You found the Millenium Falcon!"
+	}
+	else {
+		document.getElementById("description").innerHTML=null;
+	}
 }
