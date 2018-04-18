@@ -3,11 +3,33 @@
  3-19-2018
  Project 3 Style Page */
 
+#map {
+	height: 400px;
+	width: 400px;
+	margin: 50px;
+	border: 3px solid black;
+}
+
 body { 
 	background-color: #3e4444;
 	font-family: "Helvectica";
 	color: white;
 	font-size: 20px;
+}
+
+button {
+	padding 1em;
+	text-decoration: none;
+	display: inline-block;
+}
+
+button:hover{
+	background-color: pink;
+	color: green;
+}
+
+button:active {
+	background-color: purple;
 }
 
 #git_command_title h1 { 		/*git title*/
@@ -190,9 +212,4 @@ table.table2 second {
 	text-align: right;
 }
 
-.map {
-	height: 400px;
-	width: 400px;
-	margin: 50px;
-	border: 3px solid black;
-}
+
