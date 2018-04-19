@@ -42,12 +42,24 @@
 	<p class="word2">
 		Hello there and welcome to my biography. I am 23 years old and I am proud to be making my first website with CSS and HTML. I have always been a computer nerd and I love to help other people out with their computer issues and even programming. I always come after a challenge with a lot of confidence. I have done a lot of projects for many fortune 500 companies through out my Information Technology. In Illinois Institute of Technology I am majoring in Computer Science and Information Technology Management. I am basically a Jack of All Trades when it comes to computers. I am COMPTIA Network + certified and I have many more certifications. In my younger years I was bullied a lot in high school and I found my passion in computers when one day I built my first computer and had Linux installed on it. The slideshow that you see shows the many pictures of what describes me as a person. My sister Angelika Kukuc told me that if I won't add her into the project she will tell my mom so I added a picture of me and her. My Shelby GT 500 is what I work on in my spare time. My car has 700hp and a lot of custom work done to it. I also like to go to the gym every day and stay in shape. A healthy body keeps a healthy mind and I advise everyone to go and do a one hour workout everyday because you will feel much better as a person. Finally I want to thank my mom and dad for pushing me to go and get degrees and work hard to achieve greatness. I hope you read my biography and I am looking forward to working with you all. Good Luck with the rest of your Education.
 	</p>
+	</div>
 </section>
 <section>
+	<div class="center">
 	<h3>Top 5 Most Radioactive Locations in the World</h3>
-	<div id="map">
-	<script src="JScript/script.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-HdyNRU7F4FOjQUS1P3u6JjDip90SrpQ&callback=initMap"></script>
+	<p id="description">
 	</div>
+	<div class="center">
+		<button type="button" onclick="travel(fukushima_japan,locations[4])">1.Fukushima, Japan</button>
+		<button type="button" onclick="travel(chernobyl_ukraine, locations[3])">2.Chernobyl, Ukraine</button>
+		<button type="button" onclick="travel(malisuu_kyrgyzstan, locations[2])">3.Malisuu, Kyrgyzstan</button>
+		<button type="button" onclick="travel(semi_kazakhstan, locations[1])">4.Semipatlanisk, Kazakhstan</button>
+		<button type="button" onclick="travel(mayak_siberia, locations[0])">5.Mayak, Siberia</button>
+	</div>
+	<div id="center">
+		<div id="map"></div>
+		<script src="JScript/script.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-HdyNRU7F4FOjQUS1P3u6JjDip90SrpQ&callback=initMap"></script>
+		</div>
 </body>
 </html>

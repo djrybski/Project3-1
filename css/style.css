@@ -3,11 +3,19 @@
  3-19-2018
  Project 3 Style Page */
 
+.center {
+	text-align: center;
+}
+
 #map {
 	height: 400px;
 	width: 400px;
-	margin: 50px;
-	border: 3px solid black;
+	border: 5px solid pink;
+	margin-top: 20px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;;
+	
 }
 
 body { 
@@ -18,9 +26,11 @@ body {
 }
 
 button {
-	padding 1em;
+	text-align: center;
 	text-decoration: none;
-	display: inline-block;
+	width: 225x;
+	font-size: 20px;
+
 }
 
 button:hover{
